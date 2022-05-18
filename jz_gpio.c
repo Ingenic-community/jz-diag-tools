@@ -45,12 +45,11 @@ static void show_help() {
 		"\n"
 		"Examples:\n"
 		"  jz_gpio show\n"
-		"  jz_gpio pc23 input\n"
+		"  jz_gpio pc23 gpio_input\n"
 		"  jz_gpio pc23 read\n"
-		"  jz_gpio pa00 output\n"
+		"  jz_gpio pa00 gpio_output\n"
 		"  jz_gpio pa00 write 1\n"
-		"  jz_gpio pd00 func 0  # Set PD00 as ssi0_clk on X1000\n"
-		"  jz_gpio pd00 gpio    # Revert to GPIO mode\n"
+		"  jz_gpio pb27 func 0  # Set PB27 as 24MHz clock output on X1000\n"
 	);
 }
 
