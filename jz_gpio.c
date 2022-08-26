@@ -238,6 +238,12 @@ int main(int argc, char **argv) {
 				} else {
 					BIT_SET(port->PAT0C, offset);
 				}
+			} else if (0 == strcmp(argv[2], "flip")) {
+				printf("Flipping... Ctrl-C to exit.\n");
+				while (1) {
+					BIT_SET(port->PAT0S, offset);
+					BIT_SET(port->PAT0C, offset);
+				}
 			} else if (0 == strcmp(argv[2], "pat1")) {
 				uint8_t v = check_val(val);
 				if (v) {
